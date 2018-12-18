@@ -16,7 +16,7 @@ const NavBar = (props) => {
           <Link to="/pilgrims">Pilgrims</Link>
         </li>
         <li className="navLink">
-          <Link to="/pilgrimes/new">Add New Pilgrim</Link>
+          <Link to="/pilgrims/new">Add New Pilgrim</Link>
         </li>
         <li className="navLink">
           <Link to="/outings" >Outings</Link>
