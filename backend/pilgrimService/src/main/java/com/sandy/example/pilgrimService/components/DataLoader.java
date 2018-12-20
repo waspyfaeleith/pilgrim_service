@@ -5,7 +5,7 @@ import com.sandy.example.pilgrimService.models.Pilgrim;
 import com.sandy.example.pilgrimService.models.YellowTShirt;
 import com.sandy.example.pilgrimService.repositories.OutingRepository;
 import com.sandy.example.pilgrimService.repositories.PilgrimRepository;
-import com.sandy.example.pilgrimService.repositories.YellowTShirtRepository;
+import com.sandy.example.pilgrimService.repositories.YellowTShirtRepository.YellowTShirtRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
