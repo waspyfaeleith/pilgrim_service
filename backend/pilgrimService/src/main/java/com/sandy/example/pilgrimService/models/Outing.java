@@ -91,5 +91,5 @@ public class Outing {
     public void markReturned() {
         this.timeIn = new Date();
     }
-    
+
 }
