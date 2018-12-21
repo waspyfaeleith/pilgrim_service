@@ -47,6 +47,19 @@ public class DataLoader implements ApplicationRunner {
         YellowTShirt chief = new YellowTShirt("The Chief", "S");
         yellowTShirtRepository.save(chief);
 
+
+        YellowTShirt jack = new YellowTShirt("Jack", "D");
+        yellowTShirtRepository.save(jack);
+
+        YellowTShirt victor = new YellowTShirt("Victor", "D");
+        yellowTShirtRepository.save(victor);
+
+        YellowTShirt isa = new YellowTShirt("Isa", "L");
+        yellowTShirtRepository.save(isa);
+
+        YellowTShirt winston = new YellowTShirt("Winston", "L");
+        yellowTShirtRepository.save(winston);
+
         Pilgrim bert = new Pilgrim("Bert", 201);
         pilgrimRepository.save(bert);
 
