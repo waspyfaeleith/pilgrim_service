@@ -21,10 +21,10 @@ public class YellowTShirtRepositoryImpl implements YellowTShirtRepositoryCustom 
         Session session = entityManager.unwrap(Session.class);
 
         try {
-        Criteria cr = session.createCriteria(YellowTShirt.class);
+            Criteria cr = session.createCriteria(YellowTShirt.class);
 
-        cr.add(Restrictions.eq("shift", group));
-        results = cr.list();
+            cr.add(Restrictions.eq("shift", group));
+            results = cr.list();
         } catch (HibernateException ex) {
             ex.printStackTrace();
         } finally {
