@@ -16,7 +16,8 @@ class YellowTShirtGroupContainer extends Component {
       this.setState({yellowTShirts: data})
     })
   }
-   render() {
+
+  render() {
      return(
         <Fragment>
           <h3>{this.props.group} Group</h3>
