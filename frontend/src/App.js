@@ -5,6 +5,7 @@ import YellowTShirtListContainer from './containers/yellowTShirts/YellowTShirtLi
 import YellowTShirtFormContainer from './containers/yellowTShirts/YellowTShirtFormContainer'
 import PilgrimListContainer from './containers/pilgrims/PilgrimListContainer'
 import PilgrimFormContainer from './containers/pilgrims/PilgrimFormContainer'
+import OutingListContainer from './containers/outings/OutingListContainer'
 import './App.css';
 
 class App extends Component {
@@ -18,6 +19,7 @@ class App extends Component {
               <Route exact path = '/yellowTShirts/new' component={YellowTShirtFormContainer}/>
               <Route exact path = '/pilgrims' component={PilgrimListContainer}/>
               <Route exact path = '/pilgrims/new' component={PilgrimFormContainer}/>
+              <Route exact path = '/outings' component={OutingListContainer}/>
             </Switch>
           </Fragment>
       </Router >

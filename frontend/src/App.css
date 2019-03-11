@@ -30,3 +30,16 @@
     transform: rotate(360deg);
   }
 }
+
+.groupList {
+  float: left;
+  width: 45%;
+}
+
+.lGroup {
+  border-right: 2px solid;
+}
+
+h3.groupHeader {
+  align-content: center;
+}

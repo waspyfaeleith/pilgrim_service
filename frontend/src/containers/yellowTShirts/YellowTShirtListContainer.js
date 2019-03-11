@@ -2,13 +2,11 @@ import React, {Component, Fragment} from 'react';
 //import YellowTShirtList from '../../components/yellowTShirts/YellowTShirtList.js';
 import YellowTShirtGroupContainer from './YellowTShirtGroupContainer.js';
 
-import Request from '../../helpers/request.js';
-
 class YellowTShirtListContainer extends Component {
-  constructor(props){
-    super(props);
-    //this.state = {yellowTShirts: []}
-  }
+  // constructor(props){
+  //   super(props);
+  //   //this.state = {yellowTShirts: []}
+  // }
 
   // componentDidMount(){
   //   let request = new Request()
@@ -22,8 +20,12 @@ class YellowTShirtListContainer extends Component {
     return (
      <Fragment>
         <YellowTShirtGroupContainer group = "S"/>
-        <YellowTShirtGroupContainer className = "groupList" group = "D"/>
-        <YellowTShirtGroupContainer className = "groupList" group = "L"/>
+          <div className = "groupList lGroup">
+            <YellowTShirtGroupContainer  group = "D"/>
+          </div>
+          <div className = "groupList">
+            <YellowTShirtGroupContainer group = "L"/>
+          </div>
      </Fragment>
     )
   }

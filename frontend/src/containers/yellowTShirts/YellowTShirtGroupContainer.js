@@ -20,7 +20,7 @@ class YellowTShirtGroupContainer extends Component {
   render() {
      return(
         <Fragment>
-          <h3>{this.props.group} Group</h3>
+          <h3 classname="groupHeader">{this.props.group} Group</h3>
           <YellowTShirtList yellowTShirts = {this.state.yellowTShirts} />
         </Fragment>
      )
