@@ -12,7 +12,6 @@ class OutingListContainer extends Component {
   componentDidMount(){
     let request = new Request()
     request.get('/api/outings').then((data) => {
-      /*console.log(data)*/
       this.setState({outings: data._embedded.outings})
     })
   }
