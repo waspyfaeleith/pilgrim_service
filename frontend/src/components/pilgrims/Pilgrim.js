@@ -2,7 +2,7 @@ import React  from 'react';
 import {Link} from 'react-router-dom';
 
 const Pilgrim = (props) => {
-
+  
   if(!props.pilgrim){
     return null;
   }

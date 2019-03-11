@@ -11,7 +11,7 @@ const DateFromSQLDate = (props) => {
 
   return (
     <React.Fragment>
-        <p>{day} / {month}</p>
+        {day} / {month}
     </React.Fragment>
   )
 

@@ -11,7 +11,7 @@ const TimeFromSQLDate = (props) => {
 
   return (
     <React.Fragment>
-        <p>{hours}:{minutes}</p>
+        {hours}:{minutes}
     </React.Fragment>
   )
 

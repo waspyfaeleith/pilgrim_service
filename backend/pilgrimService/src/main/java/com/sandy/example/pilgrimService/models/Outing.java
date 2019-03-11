@@ -1,6 +1,5 @@
 package com.sandy.example.pilgrimService.models;
 
-
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.annotations.Cascade;
 
