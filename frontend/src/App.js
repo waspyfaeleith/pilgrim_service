@@ -7,6 +7,7 @@ import YellowTShirtDetailsContainer from './containers/yellowTShirts/YellowTShir
 import PilgrimListContainer from './containers/pilgrims/PilgrimListContainer'
 import PilgrimFormContainer from './containers/pilgrims/PilgrimFormContainer'
 import OutingListContainer from './containers/outings/OutingListContainer'
+import OutingFormContainer from './containers/outings/OutingFormContainer'
 import './App.css';
 
 class App extends Component {
@@ -17,11 +18,12 @@ class App extends Component {
           <NavBar/>
             <Switch>
               <Route exact path = '/yellowTShirts' component={YellowTShirtListContainer}/>
-              <Route exact path = '/yellowTShirts/:id' component={YellowTShirtDetailsContainer}/>
               <Route exact path = '/yellowTShirts/new' component={YellowTShirtFormContainer}/>
+              <Route exact path = '/yellowTShirts/:id' component={YellowTShirtDetailsContainer}/>
               <Route exact path = '/pilgrims' component={PilgrimListContainer}/>
               <Route exact path = '/pilgrims/new' component={PilgrimFormContainer}/>
               <Route exact path = '/outings' component={OutingListContainer}/>
+              <Route exact path = '/outings/new' component={OutingFormContainer}/>
             </Switch>
           </Fragment>
       </Router >
