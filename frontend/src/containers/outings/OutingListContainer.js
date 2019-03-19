@@ -19,7 +19,7 @@ class OutingListContainer extends Component {
 
   render(){
     return (
-     <OutingList outings = {this.state.outings} />
+      <OutingList outings = {this.state.outings} />
     )
   }
 }

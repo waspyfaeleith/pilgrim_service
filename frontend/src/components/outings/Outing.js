@@ -5,11 +5,11 @@ import YellowTShirtList from '../yellowTShirts/YellowTShirtList.js'
 
 const Outing = (props) => {
 
-  console.log("Outing:",props.outing);
+  //console.log("Outing:",props.outing);
   if(!props.outing){
     return null;
   }
-  console.log("Pilgrim:", props.outing.pilgrim)
+  //console.log("Pilgrim:", props.outing.pilgrim)
 
   return (
     <React.Fragment>

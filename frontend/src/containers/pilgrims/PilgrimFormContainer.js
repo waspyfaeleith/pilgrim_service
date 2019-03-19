@@ -3,11 +3,6 @@ import PilgrimForm from '../../components/pilgrims/PilgrimForm.js'
 import Request from '../../helpers/request.js';
 
 class PilgrimFormContainer extends Component {
-  constructor(props){
-    super(props);
-
-    this.handlePilgrimPost = this.handlePilgrimPost.bind(this);
-  }
 
   handlePilgrimPost(pilgrim) {
     const request = new Request();
@@ -17,7 +12,7 @@ class PilgrimFormContainer extends Component {
   }
 
   render() {
-    return <PilgrimForm handlePilgrimPost={this.handlePilgrimPost}/>
+    return <PilgrimForm handlePilgrimPost={this.handlePilgrimPost} />
   }
 }
 

@@ -1,23 +1,27 @@
-import React from 'react';
+import React, {Component} from 'react';
 import PilgrimSelector from '../pilgrims/PilgrimSelector'
 import YellowTShirtSelector from '../yellowTShirts/YellowTShirtSelector'
 
-const OutingForm = (props) => {
-  function handleSubmit(event){
-    event.preventDefault();
-    const outing = {
-        "pilgrim": event.target.name.value,
-        "yellowTShirt": event.target.yellowTShirt.value
-      }
-    props.handleOutingPost(outing);
+class OutingForm extends Component {
+  constructor(props) {
+    super(props);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  return(
-    <div>
-      <PilgrimSelector pilgrims={props.pilgrims}/>
-      <YellowTShirtSelector yellowTShirts={props.yellowTShirts}/>
-    </div>
-  )
+  handleSubmit(event){
+    event.preventDefault();
+    console.log("SUBMITTING FORM!!!")
+    this.props.handleOutingPost();
+  }
+
+  render() {
+    return(
+      <form onSubmit={this.handleSubmit}>
+        <PilgrimSelector pilgrims={this.props.pilgrims} onPilgrimSelected={this.props.onPilgrimSelected}/>
+        <YellowTShirtSelector yellowTShirts={this.props.yellowTShirts} onYellowTShirtSelected={this.props.onYellowTShirtSelected}/>
+        <input type="submit" value="Save" />
+      </form>
+  )}
 
 }
 

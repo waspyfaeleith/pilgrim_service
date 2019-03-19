@@ -9,7 +9,7 @@ const OutingList = (props) => {
 					<div className = "component">
 				      <Outing outing={outing} />
 			    </div>
-			</li>
+			  </li>
 		)
 		})
 

@@ -2,7 +2,7 @@ import React from 'react';
 
 const PilgrimSelector = (props) => {
   const options = props.pilgrims.map((pilgrim, index) => {
-    return <option value={pilgrim.id} key={index}>{pilgrim.name}</option>
+    return <option value={index} key={index}>{pilgrim.name}</option>
   })
 
   function handleChange(event) {
