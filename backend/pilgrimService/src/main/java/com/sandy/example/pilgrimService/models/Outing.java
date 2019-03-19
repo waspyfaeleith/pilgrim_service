@@ -47,6 +47,18 @@ public class Outing {
         this.timeOut = new Date();
     }
 
+    public Outing(Pilgrim pilgrim, List<YellowTShirt> yellowTShirts) {
+        this.pilgrim = pilgrim;
+        this.yellowTShirts = yellowTShirts;
+        this.timeOut = new Date();
+    }
+
+    public Outing(Pilgrim pilgrim, YellowTShirt yellowTShirt) {
+        this.pilgrim = pilgrim;
+        this.yellowTShirts = new ArrayList<>();
+        this.addYellowTShirt(yellowTShirt);
+        this.timeOut = new Date();
+    }
     public Pilgrim getPilgrim() {
         return pilgrim;
     }

@@ -14,6 +14,7 @@ import org.springframework.stereotype.Component;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 
 @Component
@@ -66,6 +67,9 @@ public class DataLoader implements ApplicationRunner {
         Pilgrim nan = new Pilgrim("Nan", 200);
         pilgrimRepository.save(nan);
 
+        Pilgrim cathy = new Pilgrim("Cathy", 200);
+        pilgrimRepository.save(cathy);
+
         Outing outing1 = new Outing(nan);
         outing1.addYellowTShirt(chief);
         outing1.addYellowTShirt(legend);
@@ -77,6 +81,16 @@ public class DataLoader implements ApplicationRunner {
         Outing outing2 = new Outing(bert);
         outing2.addYellowTShirt(legend);
         outingRepository.save(outing2);
+
+        ArrayList<YellowTShirt> helpers = new ArrayList<>();
+        helpers.add(jack);
+        helpers.add(victor);
+
+        Outing outing3 = new Outing(cathy, helpers);
+        outingRepository.save(outing3);
+
+        Outing outing4 = new Outing(bert, jack);
+        outingRepository.save(outing4);
 
     }
 }
