@@ -7,7 +7,7 @@ const DateFromSQLDate = (props) => {
 
   const dateTime = new Date(props.dateTime);
   const day = dateTime.getDate();
-  const month = dateTime.getMonth();
+  const month = dateTime.getMonth() + 1;
 
   return (
     <React.Fragment>
