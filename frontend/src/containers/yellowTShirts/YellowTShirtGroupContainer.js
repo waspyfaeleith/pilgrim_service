@@ -1,6 +1,6 @@
 import React, {Component, Fragment} from 'react';
 import Request from '../../helpers/request.js';
-import YellowTShirtList from '../../components/yellowTShirts/YellowTShirtList.js';
+import YellowTShirtNameList from '../../components/yellowTShirts/YellowTShirtNameList.js';
 
 class YellowTShirtGroupContainer extends Component {
   constructor(props){
@@ -21,7 +21,7 @@ class YellowTShirtGroupContainer extends Component {
      return(
         <Fragment>
           <h3 className="groupHeader">{this.props.group} Group</h3>
-          <YellowTShirtList yellowTShirts = {this.state.yellowTShirts} />
+          <YellowTShirtNameList yellowTShirts = {this.state.yellowTShirts} />
         </Fragment>
      )
    }

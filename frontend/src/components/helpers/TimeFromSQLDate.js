@@ -5,6 +5,10 @@ const TimeFromSQLDate = (props) => {
     return null;
   }
 
+  if(!props.status){
+    return null;
+  }
+
   const dateTime = new Date(props.dateTime);
   const hours = dateTime.getHours();
   let minutes = dateTime.getMinutes();
@@ -14,7 +18,7 @@ const TimeFromSQLDate = (props) => {
 
   return (
     <React.Fragment>
-        {hours}:{minutes}
+        Time {props.status}: {hours}:{minutes}
     </React.Fragment>
   )
 
