@@ -7,7 +7,10 @@ const TimeFromSQLDate = (props) => {
 
   const dateTime = new Date(props.dateTime);
   const hours = dateTime.getHours();
-  const minutes = dateTime.getMinutes();
+  let minutes = dateTime.getMinutes();
+  if (minutes < 10) {
+    minutes = "0" + minutes;
+  }
 
   return (
     <React.Fragment>

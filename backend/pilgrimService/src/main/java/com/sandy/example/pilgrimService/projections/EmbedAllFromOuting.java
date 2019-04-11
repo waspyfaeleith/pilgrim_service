@@ -1,4 +1,4 @@
-package com.sandy.example.pilgrimService.components;
+package com.sandy.example.pilgrimService.projections;
 
 import com.sandy.example.pilgrimService.models.Outing;
 import com.sandy.example.pilgrimService.models.Pilgrim;
@@ -10,6 +10,7 @@ import java.util.List;
 
 @Projection(name="embedAllFromOuting", types= Outing.class)
 public interface EmbedAllFromOuting {
+    Long getId();
     Pilgrim getPilgrim();
     List<YellowTShirt> getYellowTShirts();
     Date getTimeIn();
