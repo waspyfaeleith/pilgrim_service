@@ -8,6 +8,7 @@ import PilgrimListContainer from './containers/pilgrims/PilgrimListContainer'
 import PilgrimFormContainer from './containers/pilgrims/PilgrimFormContainer'
 import OutingListContainer from './containers/outings/OutingListContainer'
 import OutingFormContainer from './containers/outings/OutingFormContainer'
+import OutingDetailsContainer from './containers/outings/OutingDetailsContainer'
 import './App.css';
 
 class App extends Component {
@@ -24,6 +25,7 @@ class App extends Component {
               <Route exact path = '/pilgrims/new' component={PilgrimFormContainer}/>
               <Route exact path = '/outings' component={OutingListContainer}/>
               <Route exact path = '/outings/new' component={OutingFormContainer}/>
+              <Route exact path = '/outings/:id' component={OutingDetailsContainer}/>
             </Switch>
           </Fragment>
       </Router >

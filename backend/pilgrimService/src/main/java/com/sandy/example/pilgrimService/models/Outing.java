@@ -59,6 +59,9 @@ public class Outing {
         this.addYellowTShirt(yellowTShirt);
         this.timeOut = new Date();
     }
+
+    public Long getId() { return this.id; }
+
     public Pilgrim getPilgrim() {
         return pilgrim;
     }
@@ -83,10 +86,6 @@ public class Outing {
         this.timeOut = timeOut;
     }
 
-    public void setTimeOut() {
-        this.timeOut = new Date();
-    }
-
     public Date getTimeIn() {
         return timeIn;
     }
@@ -100,7 +99,9 @@ public class Outing {
     }
 
     public void markReturned() {
-        this.timeIn = new Date();
+
+        Date date = new Date();
+        this.setTimeIn(date);
     }
 
 }
