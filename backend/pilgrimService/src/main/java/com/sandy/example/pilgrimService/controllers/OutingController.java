@@ -30,4 +30,5 @@ public class OutingController {
         outingRepository.save(outing);
         return outing;
     }
+
 }
